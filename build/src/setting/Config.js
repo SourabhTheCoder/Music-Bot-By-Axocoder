@@ -17,8 +17,8 @@ export default class OrasConfig extends Object {
     constructor() {
         super();
         this.token =
-            "";
-        this.botid = ""
+            process.env.token;
+        this.botid = process.env.botid;
         this.prefix = "+";
         this.nodes = [
             {
